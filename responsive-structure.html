@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{ box-sizing: border-box;}
+        .header
+        {
+            /* height: 100px; */
+            background: gray;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .header .logo 
+        {
+            height: 100px;
+            width: 20%;
+            /* width: 100%; */
+            background: lightblue;
+            
+        }
+        .header .nav 
+        {
+            height: 100px;
+            width: 80%;
+            /* width: 100%; */
+            background: lightcoral;
+            
+        }
+
+        .content {
+
+            width: 100%;
+            background-color: lightpink;
+            /* height: 400px; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .content .p1 {
+
+            width: 25%;
+            border: 1px solid;
+            height: 400px;
+        
+        }
+
+        .content .p2 {
+            width: 35%;
+            border: 1px solid;
+            height: 400px;
+
+        }
+
+        .content .p2 .up { width: 100%; border: 1px solid red; height:30%;}
+        .content .p2 .down { width: 100%; border: 1px solid green; height: 70%;}
+
+        .content .p3 {
+            width: 15%;
+            border: 1px solid;
+            height: 400px;
+
+        }
+
+        .content .p4 {
+            width: 25%;
+            border: 1px solid;
+            height: 400px;
+
+        }
+
+        @media(max-width:1153px)
+        {
+            .header .logo {width:10%;}
+            .header .nav{width: 90%;}
+        }
+
+        @media(max-width:953px)
+        {
+            .header .logo {width:50%;}
+            .header .nav{width: 50%;}
+            .content .p1 { width: 50%;}
+            .content .p2 { width: 50%;}
+            .content .p3 { width: 50%;}
+            .content .p4 { width: 50%;}
+        }
+        
+
+
+        @media(max-width:753px)
+        {
+            .header .logo {width:100%;}
+            .header .nav{width: 100%;}
+            .content .p1 { width: 100%;}
+            .content .p2 { width: 100%;}
+            .content .p3 { width: 100%;}
+            .content .p4 { width: 100%;}
+        }
+
+        @media(max-width:453px)
+        {
+            .header .logo {width:100%;}
+            .header .nav{width: 100%;}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">Logo</div>
+        <div class="nav">Navbar</div>
+    </div>
+
+    <div class="content">
+
+        <div class="p1">Content</div>
+
+        <div class="p2">
+            <div class="up">Content</div>
+            <div class="down">Content</div>
+
+        </div>
+
+        <div class="p3">Content</div>
+        <div class="p4">Content</div>
+    </div>
+    
+</body>
+</html>
